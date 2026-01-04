@@ -669,3 +669,14 @@ footer {
   height: 100%;
   object-fit: cover;   /* חיתוך יפה לריבוע */
 }
+.img123 {
+  width: 100%;     /* תמלא את רוחב הכרטיס */
+  height: auto;
+  border-radius: 15px 15px 0 0;
+   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  border-radius: 20px;
+}
+.picplace {
+   margin-bottom: -80px;
+}
