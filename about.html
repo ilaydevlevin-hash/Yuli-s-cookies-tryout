@@ -30,7 +30,12 @@
 
 <header>
   <h1>לגבינו</h1>
-  <nav>
+  <div class="image-box">
+    <img src="logo.png" alt="לוגו Yuli's cookies">
+  </div>
+  <button class="nav-toggle">☰</button>
+
+  <nav class="nav-menu">
     <a href="index.html">עמוד הבית</a>
     <a href="menu.html">תפריט</a>
     <a href="about.html">לגבינו</a>
@@ -46,6 +51,13 @@
 <footer>
   <p>luxary Home-made bakery</p>
 </footer>
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav-menu');
 
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+</script>
 </body>
 </html>

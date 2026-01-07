@@ -35,8 +35,9 @@
   <div class="image-box">
     <img src="logo.png" alt="לוגו Yuli's cookies">
   </div>
+  <button class="nav-toggle">☰</button>
 
-  <nav>
+  <nav class="nav-menu">
     <a href="index.html">עמוד הבית</a>
     <a href="menu.html">תפריט</a>
     <a href="about.html">לגבינו</a>
@@ -84,6 +85,13 @@
 <footer>
   <p>© Yuli's cookies</p>
 </footer>
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav-menu');
 
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+</script>
 </body>
 </html>

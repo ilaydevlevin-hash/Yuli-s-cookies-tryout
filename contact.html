@@ -31,6 +31,9 @@ FILE: contact.html
 
 <header>
   <h1>Yuli's cookies</h1>
+  <div class="image-box">
+    <img src="logo.png" alt="לוגו Yuli's cookies">
+  </div>
   <nav>
     <a href="index.html">עמוד הבית</a>
     <a href="menu.html">תפריט</a>
@@ -51,6 +54,13 @@ FILE: contact.html
   <p>© Yuli's cookies
   </p>
 </footer>
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav-menu');
 
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+</script>
 </body>
 </html>

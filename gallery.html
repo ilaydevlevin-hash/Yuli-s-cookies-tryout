@@ -32,6 +32,9 @@ FILE: gallery.html
 <header>
   <h1>גלרייה</h1>
   <nav>
+    <div class="image-box">
+    <img src="logo.png" alt="לוגו Yuli's cookies">
+  </div>
     <a href="index.html">עמוד הבית
     </a>
     <a href="menu.html">תפריט</a>
@@ -52,6 +55,13 @@ FILE: gallery.html
 <footer>
   <p>חם מהתנור</p>
 </footer>
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav-menu');
 
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+</script>
 </body>
 </html>

@@ -680,3 +680,38 @@ footer {
 .picplace {
    margin-bottom: -80px;
 }
+/* ===== Burger Menu Mobile ===== */
+.nav-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  nav a {
+    padding: 8px 0;
+  }
+
+  /* תיקון לוגו למובייל */
+  .image-box {
+    margin: 20px auto;
+  }
+}
