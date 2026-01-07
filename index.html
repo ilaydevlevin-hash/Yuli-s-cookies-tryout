@@ -2,17 +2,40 @@
 <html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yuli's cookies</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- תיקון רספונסיבי רק למובייל -->
+  <style>
+    @media (max-width: 768px) {
+      .image-box {
+        margin: 20px auto;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      header p {
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
   <h1>Yuli's cookies</h1>
   <p>Fresh • Homemade • 3-days a week</p>
+
   <div class="image-box">
-  <img src="logo.png" alt="תמונה">
-</div>
+    <img src="logo.png" alt="לוגו Yuli's cookies">
+  </div>
+
   <nav>
     <a href="index.html">עמוד הבית</a>
     <a href="menu.html">תפריט</a>
@@ -20,41 +43,42 @@
     <a href="gallery.html">גלרייה</a>
     <a href="contact.html">צרו קשר</a>
   </nav>
+
   <div class="loader">
-  <div class="cup">
-    <div class="cup-handle"></div>
-    <div class="smoke one"></div>
-    <div class="smoke two"></div>
-    <div class="smoke three"></div>
+    <div class="cup">
+      <div class="cup-handle"></div>
+      <div class="smoke one"></div>
+      <div class="smoke two"></div>
+      <div class="smoke three"></div>
+    </div>
+    <div class="load">creamy</div>
   </div>
-  <div class="load">creamy</div>
-</div>
 </header>
 
 <section class="section">
   <h2>ברוכים הבאים</h2>
-  <p>ברוכים הבאים ל-yuli's cookies ועוד מילים שנחשוב עליהם אחר כך!</p>
+  <p>ברוכים הבאים ל-Yuli's cookies — מאפים ביתיים וטריים 💛</p>
 </section>
 
 <section class="section">
   <h2>המועדפים שלנו</h2>
+
   <div class="cards">
     <div class="card">
       <h3>עוגת שמרים</h3>
       <p>עוגת שמרים במילוי שוקולד נמס.</p>
     </div>
+
     <div class="card">
-      <h3>עוגיה כלשהי</h3>
-      <p>עוד מידע בערך 7-10 מילים</p>
+      <h3>עוגיית שוקולד צ׳יפס</h3>
+      <p>פריכה מבחוץ, רכה מבפנים.</p>
     </div>
+
     <div class="card">
-      <h3>עוגיה כלשהי</h3>
-      <p>עוד מידע בערך 7-10 מילים</p>
+      <h3>עוגיית וניל</h3>
+      <p>מתוקה ועדינה, מושלמת לקפה.</p>
     </div>
   </div>
-  <!-- From Uiverse.io by Emmaline-ozi --> 
-
-
 </section>
 
 <footer>
